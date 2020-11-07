@@ -1,0 +1,7 @@
+data/pm.mirko.bitmycoins.desktop.in
+data/pm.mirko.bitmycoins.appdata.xml.in
+data/pm.mirko.bitmycoins.gschema.xml
+src/window.ui
+src/main.py
+src/window.py
+
