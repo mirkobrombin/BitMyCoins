@@ -60,7 +60,7 @@ class BitmycoinsWindow(Gtk.Window):
         for currency in currencies_datalist:
             self.currencies_liststore.append(list(currency))
 
-        for i, column_title in enumerate(["#", "Name", "Current price", "Max 24h", "Change"]):
+        for i, column_title in enumerate(["#", "Name", "Change", "Current price", "Max 24h"]):
             '''
             if column_title == "#":
                 renderer = Gtk.CellRendererPixbuf()
