@@ -65,7 +65,7 @@ class BitmycoinsWindow(Gtk.Window):
             if column_title == "#":
                 renderer = Gtk.CellRendererPixbuf()
                 column = Gtk.TreeViewColumn(column_title, renderer, text=i)
-                column.set_cell_data_func(renderer, self.get_tree_cell_pixbuf)
+                column.set_cell_data_func(renderer, self.set_tree_cell_pixbuf)
             else:
                 renderer = Gtk.CellRendererText()
                 column = Gtk.TreeViewColumn(column_title, renderer, text=i)
@@ -73,6 +73,7 @@ class BitmycoinsWindow(Gtk.Window):
 
             renderer = Gtk.CellRendererText()
             column = Gtk.TreeViewColumn(column_title, renderer, text=i)
+
             if i == 2:
                 column.set_cell_data_func(renderer, self.set_tree_cell_background)
 
@@ -89,7 +90,7 @@ class BitmycoinsWindow(Gtk.Window):
         else:
             cell.set_property("foreground", "green")
 
-    '''
+    # TODO: thid method should be async
     def set_tree_cell_pixbuf(self, col, cell, model, iter, user_data):
         stream = Gio.MemoryInputStream.new_from_data(
             urlopen(
@@ -101,7 +102,6 @@ class BitmycoinsWindow(Gtk.Window):
         )
         pixbuf = GdkPixbuf.Pixbuf.new_from_stream_at_scale(stream, 24, 24, True)
         cell.set_property('pixbuf', pixbuf)
-    '''
 
 win = BitmycoinsWindow()
 win.set_default_size(520, 700)
