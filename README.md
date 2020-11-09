@@ -1,4 +1,5 @@
 <div align="center">
+   <img src="https://git.mirko.pm/brombinmirko/BitMyCoins/raw/branch/master/data/bitmycoins.png" />
 	<h1 align="center">Bit my Coins</h1>
 	<p align="center">Track cryptocurrencies easily</p>
 </div>
