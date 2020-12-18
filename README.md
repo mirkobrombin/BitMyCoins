@@ -15,5 +15,5 @@
 <br/>
 
 <div align="center">
-	<img src="https://git.mirko.pm/brombinmirko/BitMyCoins/raw/branch/master/screenshot.png" />
+	<img src="https://raw.githubusercontent.com/mirkobrombin/BitMyCoins/master/screenshot.png" />
 </div>
